@@ -6,13 +6,15 @@
 
     <title>Wild at Heart Your Motorbike Home Page</title>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
     <!--Top header-->
-    <header>
+    <header id="top_header">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="html/about.html">About</a></li>
@@ -22,55 +24,58 @@
     </header>
 
     <!--Bottom header (hidden until mouse over "About" in top header)-->
-    <header>
+    <header id="bottom_header">
         <ul>
+            <li></li>
             <li><a href="html/contact.html">Contact</a></li>
+            <li></li>
+            <li></li>
         </ul>
     </header>
 
     <main>
 
         <!--Top section div with background photo and text caption (left)-->
-        <div>
-            <h1>
-                Wild at heart your motorbike
-            </h1>
-            <img src="" alt="Picture of an orange motorbike">
+        <div id="home_top_div">
+                <h1>
+                    Wild <span class="marck_script_words all_uppercase_words red_background_words">at</span> heart your motorbike
+                </h1>
+                <img src="img/home_motorbike_img.jpg" alt="Picture of an orange motorbike">
         </div>
 
         <!--Bottom section div split into 3 grids-->
-        <div>
-            
-            <div>
-                <h2>
-                    Wild
-                </h2>
-                <p>
-                    I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
-                </p>
-                <img src="" alt="Side view of front of motorcycle">
-                <a href="#">Check Gallery</a>
+        <div id="home_bottom_div">
+                
+            <div id="home_bottom_div_left">
+                    <h2>
+                        Wild
+                    </h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
+                    </p>
+                    <img src="img/home_bottom_div_left_img.jpg" alt="Side view of front of motorcycle">
+                    <a href="#">Check Gallery</a>
             </div>
 
-            <div>
+            <div id="home_bottom_div_middle">
                 <h2>
                     Fast
                 </h2>
                 <p>
                     I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
                 </p>
-                <img src="" alt="Side view of middle of motorcycle">
+                <img src="img/home_bottom_div_middle_img.jpg" alt="Side view of middle of motorcycle">
                 <a href="#">Watch Videos</a>
             </div>
 
-            <div>
+            <div id="home_bottom_div_right">
                 <h2>
                     Sleek
                 </h2>
                 <p>
                     I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
                 </p>
-                <img src="" alt ="Side view of rear of motorcyle">
+                <img src="img/home_bottom_div_right_img.jpg" alt ="Side view of rear of motorcyle">
                 <a href="#">Read More</a>
             </div>
 
