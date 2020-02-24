@@ -1,0 +1,229 @@
+/* General Style Settings*/
+
+/* red color: #b50603
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: auto;
+    font-family: Impact, sans-serif, 'Marck Script';
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 0.03rem;
+}
+
+.marck_script_words
+{
+    font-family: 'Marck Script';
+}
+
+.all_uppercase_words
+{
+    text-transform: uppercase;
+}
+
+.red_background_words
+{
+    background-color: #b50603;
+}
+
+/* Header Settings*/
+
+header
+{
+    display: grid;
+    max-width: 985px;
+    /*justify-self: center;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b50603;
+}
+
+header > ul
+{
+    max-width: 100%;
+    justify-items: center;
+    background-color: #b50603;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3px 0 3px 0;
+}
+
+header > ul > li
+{
+    display: grid;
+    display: inline-block;
+    background-color: #b50603;
+    /*justify-items: center;*/
+}
+
+header > ul > li > a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #b50603;
+    letter-spacing: 0;
+}
+
+#top_header
+{
+    margin-top: 100px;
+}
+
+#bottom_header
+{
+    margin-top: 10px;
+}
+
+/*Home Style Settings - Start*/
+
+/*Home Top Div*/
+
+#home_top_div
+{
+    display: grid;
+    background-color: none;
+    max-width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#home_top_div > h1
+{
+    display: grid;
+    display: inline-block;
+    background-color: #b50603;
+    z-index: 2;
+    max-width: 271px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding: 24px 0 30px 16px;
+    /*align-self: center;*/
+    margin-top: 236px;
+    margin-bottom: auto;
+    text-transform: uppercase;
+    word-spacing: 0.1rem;
+    font-size: 2.04rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+#home_top_div > img
+{
+    z-index: 1;
+    width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+/* Home Bottom Div*/
+
+#home_bottom_div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    grid-column-gap: 8px;
+    padding: 8px;
+    background-color: #b50603;
+}
+
+#home_bottom_div_left, #home_bottom_div_middle, #home_bottom_div_right
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#home_bottom_div_left > h2, #home_bottom_div_left > p, #home_bottom_div_left > img, #home_bottom_div_left > a, #home_bottom_div_middle > h2, #home_bottom_div_middle > p, #home_bottom_div_middle > img, #home_bottom_div_middle > a,   #home_bottom_div_right > h2, #home_bottom_div_right > p, #home_bottom_div_right > img, #home_bottom_div_right > a
+{
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background: none;
+}
+
+#home_bottom_div_left > h2, #home_bottom_div_middle > h2, #home_bottom_div_right > h2
+{
+
+    z-index: 3;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* Specific change to #home_bottom_div_middle > h2 */
+
+#home_bottom_div_middle > h2
+{
+    color: #b50603;
+}
+
+#home_bottom_div_left > p, #home_bottom_div_middle > p, #home_bottom_div_right > p
+{
+    z-index: 3;
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 0.72rem;
+    line-height: 1.1rem;
+    padding-top: 76px;
+    padding-right: 95px;
+    padding-left: 10px;
+}
+
+/* Specific changes to #home_bottom_div_middle > p and #home_bottom_div_right > p */
+
+#home_bottom_div_middle > p, #home_bottom_div_right > p
+{
+    padding-right: 18px;
+}
+
+#home_bottom_div_left > img, #home_bottom_div_middle > img, #home_bottom_div_right > img
+{
+    z-index: 2;
+    width: 100%;
+} 
+
+#home_bottom_div_left > a, #home_bottom_div_middle > a, #home_bottom_div_right > a
+{
+    display: grid;
+    display: inline-block;
+    z-index: 3;
+    justify-self: right;
+    margin-top: 342px;
+    margin-bottom: auto;
+    margin-right: 17px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #ffffff;
+    letter-spacing: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    background-color: #b50603;
+    padding: 8px 18px;
+} 
+
+/*#home_bottom_div_middle
+{
+    
+}
+
+#home_bottom_div_right
+{
+    
+}*/
+
+/*Home Style Settings - End --- About Style Settings - Start*/
