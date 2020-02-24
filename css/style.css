@@ -36,9 +36,8 @@
 header
 {
     display: grid;
-    width: 60%;
-    max-width: 60%;
-    justify-self: center;
+    max-width: 985px;
+    /*justify-self: center;*/
     margin-left: auto;
     margin-right: auto;
     background-color: #b50603;
@@ -51,7 +50,7 @@ header > ul
     background-color: #b50603;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 6px 0 6px 0;
+    padding: 3px 0 3px 0;
 }
 
 header > ul > li
@@ -59,7 +58,7 @@ header > ul > li
     display: grid;
     display: inline-block;
     background-color: #b50603;
-    justify-items: center;
+    /*justify-items: center;*/
 }
 
 header > ul > li > a
@@ -68,6 +67,7 @@ header > ul > li > a
     font-weight: 500;
     font-size: 1.2rem;
     background-color: #b50603;
+    letter-spacing: 0;
 }
 
 #top_header
@@ -88,7 +88,7 @@ header > ul > li > a
 {
     display: grid;
     background-color: none;
-    width: 60%;
+    max-width: 985px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr;
@@ -97,15 +97,22 @@ header > ul > li > a
 
 #home_top_div > h1
 {
+    display: grid;
+    display: inline-block;
     background-color: #b50603;
     z-index: 2;
-    width: 27.5%;
+    max-width: 271px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    padding: 22px 0 22px 22px;
-    align-self: center;
-    margin-bottom: 362px;
+    padding: 24px 0 30px 16px;
+    /*align-self: center;*/
+    margin-top: 236px;
+    margin-bottom: auto;
     text-transform: uppercase;
+    word-spacing: 0.1rem;
+    font-size: 2.04rem;
+    line-height: 2.2rem;
+    font-weight: 500;
 }
 
 #home_top_div > img
@@ -125,7 +132,6 @@ header > ul > li > a
     width: 52%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -100px;
     margin-bottom: 100px;
     grid-column-gap: 8px;
     padding: 8px;
