@@ -1,4 +1,4 @@
-/* General Style Settings*/
+/*General Style Settings - Start*/
 
 /* red color: #b50603
 */
@@ -9,9 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
-    max-height: auto;
     font-family: Impact, sans-serif, 'Marck Script';
-
     letter-spacing: 0.03rem;
 }
 
@@ -36,32 +34,32 @@ body
     background-color: #b50603;
 }
 
-/* Header Settings u*/
+/*General Style Settings - End*/
+
+/*Header Settings - Start*/
 
 header
 {
     display: grid;
     max-width: 985px;
-    /*justify-self: center;*/
     margin-left: auto;
     margin-right: auto;
     background-color: #b50603;
+    z-index: 10;
 }
 
 header > ul
 {
     display: grid;
-    max-width: 100%;
-    justify-items: center;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 4px 0 4px 0;
 }
 
 header > ul > li
 {
     display: grid;
     display: inline-block;
-    /*justify-items: center;*/
+    justify-self: center;
 }
 
 header > ul > li > a
@@ -69,7 +67,7 @@ header > ul > li > a
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: inherit;
     letter-spacing: 0;
 }
 
@@ -78,12 +76,66 @@ header > ul > li > a
     margin-top: 100px;
 }
 
+#top_header > ul > li 
+{
+    padding: 4px 0;
+}
+
+#top_header > ul > li > a
+{
+    padding: 0 93px;
+}
+
 #bottom_header
 {
-    margin-top: 8px;
-    z-index: 2;
-    position: relative;
+    /*margin-top: 8px;*/
+    background: none;
 }
+
+.header_empty_item
+{
+    opacity: 0;
+}
+
+#header_contact_link
+{
+    display: grid;
+    display: block;
+    margin-top: 7px;
+    padding: 6px 94px;
+    background-color: #b50603;
+    color: inherit;
+}
+
+#header_contact_link > a
+{
+    padding: 0 0;
+}
+
+#header_about_link:hover
+{
+
+}
+
+#home_page_active, #about_page_active, #contact_page_active
+{
+    display: grid;
+    width: 100%;
+    background-color: #000000;
+    color: #b50603;
+    justify-content: center;
+}
+
+header > ul > li:hover, #header_contact_link:hover
+{
+    display: grid;
+    width: 100%;
+    background-color: #000000;
+    color: #b50603;
+    justify-content: center;
+}
+
+/*Header Settings - End*/
 
 /*Home Style Settings - Start*/
 
@@ -94,11 +146,13 @@ header > ul > li > a
     display: grid;
     background-color: none;
     max-width: 985px;
-    margin-top: -39px;
+    margin-top: -42px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    z-index: -1;
+    position: relative;
 }
 
 #home_top_div > h1
@@ -106,10 +160,11 @@ header > ul > li > a
     display: grid;
     display: block;
     background-color: #b50603;
-    z-index: 2;
+    z-index: 3;
     max-width: 271px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
+    border: none;
     padding: 24px 0 30px 16px;
     /*align-self: center;*/
     margin-top: 236px;
@@ -123,7 +178,7 @@ header > ul > li > a
 
 #home_top_div > img
 {
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -143,8 +198,7 @@ header > ul > li > a
     grid-column-gap: 8px;
     padding: 8px;
     background-color: #b50603;
-    z-index: 5;
-    position: relative;
+    z-index: 4;
 }
 
 #home_bottom_div_left, #home_bottom_div_middle, #home_bottom_div_right
@@ -164,7 +218,7 @@ header > ul > li > a
 #home_bottom_div_left > h2, #home_bottom_div_middle > h2, #home_bottom_div_right > h2
 {
 
-    z-index: 4;
+    z-index: 5;
     text-transform: uppercase;
     font-size: 3rem;
     padding-top: 10px;
@@ -180,7 +234,7 @@ header > ul > li > a
 
 #home_bottom_div_left > p, #home_bottom_div_middle > p, #home_bottom_div_right > p
 {
-    z-index: 4;
+    z-index: 5;
     font-family: sans-serif;
     color: #000000;
     font-size: 0.72rem;
@@ -199,7 +253,7 @@ header > ul > li > a
 
 #home_bottom_div_left > img, #home_bottom_div_middle > img, #home_bottom_div_right > img
 {
-    z-index: 3;
+    z-index: 4;
     width: 100%;
 } 
 
@@ -207,7 +261,7 @@ header > ul > li > a
 {
     display: grid;
     display: inline-block;
-    z-index: 4;
+    z-index: 5;
     justify-self: right;
     margin-top: 342px;
     margin-bottom: auto;
@@ -235,3 +289,11 @@ header > ul > li > a
 }*/
 
 /*Home Style Settings - End --- About Style Settings - Start*/
+
+
+
+/*About Style Settings - End --- Contact Style Settings - Start*/
+
+
+
+/*Contact Style Settings - End*/
