@@ -7,30 +7,35 @@
     <title>Wild at Heart Your Motorbike Contact Page</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ad7481254.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
     
-    <!--Top header-->
-    <header id="top_header">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li id="header_about_link"><a href="about.html">About</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </header>
-    
-    <!--Bottom header (hidden until mouse over "About" in top header)-->
-    <header id="bottom_header">
-        <ul>
-            <li class="header_empty_item">blank</li>
-            <li id="header_contact_link contact_page_active"><a href="contact.html">Contact</a></li>
-            <li class="header_empty_item">blank</li>
-            <li class="header_empty_item">blank</li>
-        </ul>
+    <header>
+
+        <!--Top nav-->        
+        <nav id="top_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li id="header_about_link"><a href="about.html">About</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>             
+        </nav>
+
+        <!--Bottom nav (hidden until mouse over "About" in top header)-->     
+        <nav id="bottom_nav">
+            <ul>
+                <li class="header_empty_item">blank</li>
+                <li id="header_contact_link current_page_active"><a href="contact.html">Contact</a></li>
+                <li class="header_empty_item">blank</li>
+                <li class="header_empty_item">blank</li>
+            </ul>        
+        </nav>
+
     </header>
 
     <main>
@@ -96,6 +101,18 @@
         </div>
 
     </main>  
+
+    <footer>
+        <div id="footer_div_left">
+            &copy; 2023 by WILD AT HEART YOUR MOTORBIKE. Proudly created with Wix.com and cloned by Darnell Noel.
+        </div>
+        <div id="footer_div_right">
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
