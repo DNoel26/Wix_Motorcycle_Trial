@@ -1,4 +1,4 @@
-/*General Style Settings - Start*/
+/*General Style Settings ---                            START*/
 
 /* red color: #b50603
 */
@@ -43,9 +43,9 @@ body
     background-color: var(--red_background_color);
 }
 
-/*General Style Settings - End*/
+/*General Style Settings ---                            END*/
 
-/*Header Settings - Start*/
+/*Header Settings ---                                   START*/
 
 header
 {
@@ -106,33 +106,35 @@ header > nav > ul > li > a
     background-color: var(--red_background_color);
 }
 
+/*                              TO-RETURN-TO
 #header_about_link:hover
 {
 
 }
+*/
 
-#current_page_active, header > nav > ul > li > a:hover, #header_contact_link > a:hover
+#header_contact_link.current_page_active > a, .current_page_active, header > nav > ul > li > a:hover, #header_contact_link > a:hover
 {
     background-color: var(--main_black_background_color);
     color:var(--red_text_color);
 }
 
-/*Header Settings - End*/
+/*Header Settings ---                                   END*/
 
-/*Footer Settings - Start*/
+/*Footer Settings ---                                   START*/
 
 footer
 {
     font-family: sans-serif;
-    max-width: 100%;
+    max-width: 1100px;
     max-height: 76px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
 }
 
 #footer_div_left
 {
     display: inline-block;
-    margin-left: 375px;
+    margin-left: 100px;
     letter-spacing: 0;
     word-spacing: 0;
     line-height: 1.4rem;
@@ -143,12 +145,12 @@ footer
 #footer_div_right
 {
     display: inline-block;
-    margin-left: 310px;
+    margin-left: 290px;
 }
 
-/*Footer Settings - End*/
+/*Footer Settings ---                                   END*/
 
-/*Home Style Settings - Start*/
+/*Home Style Settings ---                               START*/
 
 /*Home Top Div*/
 
@@ -189,12 +191,11 @@ footer
 {
     z-index: 2;
     max-width: 980px;
-    max-height: 957px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
 
-/* Home Bottom Div*/
+/*Home Bottom Div*/
 
 #home_bottom_div
 {
@@ -235,7 +236,7 @@ footer
     padding-left: 10px;
 }
 
-/* Specific change to #home_bottom_div_middle > h2 */
+/*Specific change to #home_bottom_div_middle > h2*/
 
 #home_bottom_div_middle > h2
 {
@@ -257,7 +258,7 @@ footer
     width: 100%;
 }
 
-/* Specific changes to #home_bottom_div_middle > p and #home_bottom_div_right > p */
+/*Specific changes to #home_bottom_div_middle > p and #home_bottom_div_right > p*/
 
 #home_bottom_div_middle > p, #home_bottom_div_right > p
 {
@@ -299,12 +300,74 @@ footer
     
 }*/
 
-/*Home Style Settings - End --- About Style Settings - Start*/
+/*Home Style Settings ---           END --- About Style Settings ---            START*/
+
+#about_top_div
+{
+    display: grid;
+    background-color: none;
+    max-width: 980px;
+    margin-top: -41px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    z-index: -1;
+    position: relative;
+}
+
+#about_top_div > h1
+{
+    background-color: var(--red_background_color);
+    z-index: 4;
+    max-width: 270px;
+    max-height: 128px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border: none;
+    padding: 24px 0 24px 16px;
+    margin-top: 77px;
+    margin-bottom: auto;
+    text-transform: uppercase;
+    word-spacing: 0.1rem;
+    font-size: 2.04rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+#about_top_div > img
+{
+    z-index: 2;
+    max-width: 980px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+/*
+.empty_shadow_box_div           TO-RETURN-TO
+{
+    width: 0;
+    height: 0;
+    z-index: 3;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    max-width: 260px;
+    max-height: 50px;
+    margin-top: 190px;
+    margin-left: 5px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    background: yellow;
+    padding: 10px;
+    box-shadow: 0 0 0 #000000, 0 0 10px #000000;
+}
+*/
+
+/*About Style Settings ---          END --- Contact Style Settings ---          START*/
 
 
 
-/*About Style Settings - End --- Contact Style Settings - Start*/
-
-
-
-/*Contact Style Settings - End*/
+/*Contact Style Settings ---                            END*/
