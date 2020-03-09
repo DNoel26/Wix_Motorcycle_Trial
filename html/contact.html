@@ -41,65 +41,113 @@
     <main id="contact_main_div">
 
         <!--Main (full) page div with background photo and text box - other divs to overlay this div-->
-        <div>
-            <h1 id="contact_top_div">
+        <div id="contact_top_div">
+            <h1>
                 Wild <span class="marck_script_words all_uppercase_words red_background_words">at </span> Heart your motorbike
             </h1>
             <img src="../img/contact_bg_img.jpg" alt="Open road with green pastures in the background">
+            <img id="red_box_shadows" src="../img/liftedshadow_medium.png">
         </div>
 
         <!--Contact info middle div section-->
-        <div>
+        <div id="contact_middle_div">
 
-            <div>
-                <h2>
+            <div id="contact_middle_div_left">
+                <h5 class="all_uppercase_words">
                     Address 
-                </h2>
+                </h5>
+                <h6>
+                    500 Terry Francois St.
+                </h6>
+                <h6>
+                    San Francisco, CA 94158
+                </h6>
+                <h6>
+                    info@mysite.com
+                </h6>
+                <h6>
+                    Tel: 123-456-7890
+                </h6>
+                <h6>
+                    Fax: 123-456-7890
+                </h6>
             </div>
-            <div>
-                <h2>
+            <div id="contact_middle_div_middle">
+                <h5 class="all_uppercase_words">
                     Contact    
-                </h2>
+                </h5>
+                <h6>
+                    Tel: 123-456-7890
+                </h6>
+                <h6>
+                    Fax: 123-456-7890
+                </h6>
+                <h6>
+                    info@mysite.com
+                </h6>
             </div>
-            <div>
-                <h2>
+            <div id="contact_middle_div_right">
+                <h5 class="all_uppercase_words">
                     Open Hours
-                </h2>
+                </h5>
+                <h6>
+                    Tues 10am - 7pm
+                </h6>
+                <h6>
+                    Wed 10am - 7pm
+                </h6>
+                <h6>
+                    Thurs 10am - 5pm
+                </h6>
+                <h6>
+                    Fri 10am - 7pm
+                </h6>
+                <h6>
+                    Sat 10am - 7pm
+                </h6>
+                <h6>
+                    Sun 10am - 3pm
+                </h6>
+                <h6>
+                    Mon closed
+                </h6>
             </div>
 
         </div>
         
-        <!--Google map embed bottom left div-->
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25229.878275899147!2d-122.38726899999996!3d37.77281646678104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f2960c5a5f%3A0xdfcd6cebc1ae9a35!2sCable%20Car%20Museum!5e0!3m2!1sen!2sus!4v1582054762876!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div id="contact_bottom_div">
+
+            <!--Google map embed bottom left div-->
+            <div id="contact_bottom_map_div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25229.878275899147!2d-122.38726899999996!3d37.77281646678104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f2960c5a5f%3A0xdfcd6cebc1ae9a35!2sCable%20Car%20Museum!5e0!3m2!1sen!2sus!4v1582054762876!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        
+            <!--Contact form bottom right div-->
+            <div id="contact_bottom_form_div">
+                <form>
+                    <input type="text" id="name_box" name="full_name" placeholder="Name">
+                    <label for="name_box">Name</label>
+                </form>
+                <form>
+                    <input type="email" id="email_box" name="email_address" placeholder="Email">
+                    <label for="email_box">Email</label>
+                </form>
+                <form>
+                    <input type="tel" id="phone_box" name="phone_number" placeholder="Phone">
+                    <label for="phone_box">Phone</label>
+                </form>
+                <form>
+                    <input type="textarea" id="message_box" name="message" placeholder="Type your message here...">
+                    <label for="message_box">Type your message here</label>
+                </form>
+                <!--Bottom right submit button-->
+                <form id="contact_submit_button">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
         </div>
         
-        <!--Contact form bottom right div-->
-        <div>
-
-            <form>
-                <input type="text" id="name_box">
-                <label for="name_box">Name</label>
-            </form>
-            <form>
-                <input type="email" id="email_box">
-                <label for="email_box">Email</label>
-            </form>
-            <form>
-                <input type="tel" id="phone_box">
-                <label for="phone_box">Phone</label>
-            </form>
-            <form>
-                <input type="text" id="message_box">
-                <label for="message_box">Type your message here</label>
-            </form>
-            <!--Bottom right submit button-->
-            <form>
-                <button type="submit">Submit</button>
-            </form>
-
-        </div>
-
     </main>  
 
     <footer>

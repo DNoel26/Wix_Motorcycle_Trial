@@ -13,10 +13,11 @@
 :root
 {
     --main_black_background_color: #000000;
+    --white_background_color: #ffffff;
     --red_background_color: #b50603;
     --main_white_text_color: #ffffff;
-    --red_text_color: #b50603;
     --black_text_color: #000000;
+    --red_text_color: #b50603;
 }
 
 body
@@ -43,6 +44,21 @@ body
     background-color: var(--red_background_color);
 }
 
+.red_text
+{
+    color: var(--red_text_color);
+}
+/*                                  DROP DOWN TO RETURN TO
+.drop_down_content
+{
+    display: none;
+}
+
+.drop_down_hover:hover .drop_down_content 
+{
+    display: block;
+}
+*/
 /*General Style Settings ---                            END*/
 
 /*Header Settings ---                                   START*/
@@ -60,7 +76,7 @@ header > nav
     background-color: var(--red_background_color);
 }
 
-header > nav > ul
+header > nav > ul                         
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,6 +93,8 @@ header > nav > ul > li > a
     letter-spacing: 0;
     width: 100%;
     text-align: center;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
 }
 
 #top_nav
@@ -117,6 +135,9 @@ header > nav > ul > li > a
 {
     background-color: var(--main_black_background_color);
     color:var(--red_text_color);
+    transition-property: var(--main_black_background_color), var(--red_text_color);
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
 }
 
 /*Header Settings ---                                   END*/
@@ -128,7 +149,7 @@ footer
     font-family: sans-serif;
     max-width: 1100px;
     max-height: 76px;
-    margin: 0 auto 50px auto;
+    margin: 32px auto 50px auto;
 }
 
 #footer_div_left
@@ -171,7 +192,7 @@ footer
 #home_top_div > h1
 {
     background-color: var(--red_background_color);
-    z-index: 3;
+    z-index: 4;
     max-width: 270px;
     max-height: 128px;
     grid-column: 1 / span 1;
@@ -190,9 +211,16 @@ footer
 #home_top_div > img
 {
     z-index: 2;
-    max-width: 980px;
+    width: 980px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
+}
+
+#home_top_div > #red_box_shadows
+{
+    z-index: 3;
+    width: 290px;
+    margin: 364px 0 0 -10px;
 }
 
 /*Home Bottom Div*/
@@ -206,7 +234,6 @@ footer
     margin-left: auto;
     margin-right: auto;
     margin-top: -358px;
-    margin-bottom: 32px;
     grid-column-gap: 8px;
     padding: 8px;
     background-color: var(--red_background_color);
@@ -302,6 +329,8 @@ footer
 
 /*Home Style Settings ---           END --- About Style Settings ---            START*/
 
+/*About Top Div*/
+
 #about_top_div
 {
     display: grid;
@@ -338,9 +367,62 @@ footer
 #about_top_div > img
 {
     z-index: 2;
-    max-width: 980px;
+    width: 980px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
+}
+
+#about_top_div > #red_box_shadows
+{
+    z-index: 3;
+    width: 290px;
+    margin: 200px 0 0 -10px;
+}
+
+/*About Bottom Div*/
+
+#about_bottom_div
+{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 22px;
+    max-width: 840px;
+    margin: -225px auto 0 auto;
+}
+
+#about_bottom_div > div > div > h2
+{
+    font-size: 3.1rem;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+#about_bottom_div > div > div > h3
+{
+    font-size: 2.1rem;
+    letter-spacing: 0;
+    margin-top: -8px;
+}
+
+#about_bottom_div > div > img
+{
+    margin-top: 52px;
+}
+
+#about_bottom_div > div > p
+{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    max-width: 455px;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.15rem;
+}
+
+#about_bottom_div > div > p:first-child
+{
+    margin: 10px 0 20px 0;
 }
 
 /*
@@ -368,6 +450,177 @@ footer
 
 /*About Style Settings ---          END --- Contact Style Settings ---          START*/
 
+/*Contact Top Div*/
 
+#contact_top_div
+{
+    display: grid;
+    background-color: none;
+    max-width: 980px;
+    margin-top: -41px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    z-index: -1;
+    position: relative;
+}
+
+#contact_top_div > h1
+{
+    background-color: var(--red_background_color);
+    z-index: 4;
+    max-width: 270px;
+    max-height: 128px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border: none;
+    padding: 24px 0 24px 16px;
+    margin-top: 77px;
+    margin-bottom: auto;
+    text-transform: uppercase;
+    word-spacing: 0.1rem;
+    font-size: 2.04rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+#contact_top_div > img
+{
+    z-index: 2;
+    width: 980px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#contact_top_div > #red_box_shadows
+{
+    z-index: 3;
+    width: 290px;
+    margin: 200px 0 0 -10px;
+}
+
+/*Contact Middle Div*/
+
+#contact_middle_div 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: -403px auto 0 auto;
+    z-index: 3;
+    width: 980px;
+    column-gap: 100px;
+}
+
+#contact_middle_div > div
+{
+    letter-spacing: 0;
+}
+
+#contact_middle_div > div > h5
+{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: normal;
+}
+
+#contact_middle_div > div > h6
+{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: normal;
+}
+
+#contact_middle_div_left
+{
+    padding-left: 70px;
+}
+
+#contact_middle_div_middle
+{
+    margin-left: -74px;
+}
+
+#contact_middle_div_right
+{
+    margin-left: -228px;
+}
+
+/*Contact Bottom Div*/
+
+#contact_bottom_div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto 0 auto;
+    width: 825px;
+    column-gap: 24px;
+}
+
+#contact_bottom_map_div > iframe
+{
+    width: 405px;
+    height: 240px;
+    margin-left: -8px;
+}
+
+#contact_bottom_form_div
+{
+    width: 433px;
+}
+
+input[type=text], input[type=email], input[type=tel] 
+{
+    width: 410px;
+    height: 35px;
+    padding: 3px 3px 3px 24px;
+}
+
+input[type=textarea]
+{
+    width: 410px;
+    height: 118px;
+    padding: 0 0 0 24px;
+}
+
+input[type=email], input[type=tel], input[type=textarea], button 
+{
+    margin-top: 6px;
+}
+
+#contact_submit_button > button
+{
+    display: inline-block;
+    justify-items: right;
+    background-color: var(--red_background_color);
+    color: var(--main_white_text_color);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 40px;
+    margin-left: 290px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+#contact_submit_button > button:hover
+{
+    background-color: var(--white_background_color);
+    color: var(--black_text_color);
+    cursor: pointer;
+}
+
+#contact_bottom_form_div > form > label
+{
+    display: none;
+}
+
+::placeholder
+{
+    font-weight: 700;
+    color: var(--black_text_color);
+}
 
 /*Contact Style Settings ---                            END*/
