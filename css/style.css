@@ -567,6 +567,14 @@ footer
 #contact_bottom_form_div
 {
     width: 433px;
+
+}
+
+input, textarea
+{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 input[type=text], input[type=email], input[type=tel] 
@@ -576,14 +584,18 @@ input[type=text], input[type=email], input[type=tel]
     padding: 3px 3px 3px 24px;
 }
 
-input[type=textarea]
+textarea
 {
     width: 410px;
     height: 118px;
-    padding: 0 0 0 24px;
+    padding: 16px 10px 0 24px;
+    resize: none;
+    overflow: auto;
+    text-overflow: ellipsis;
+    text-align: left;
 }
 
-input[type=email], input[type=tel], input[type=textarea], button 
+input[type=email], input[type=tel], textarea, button 
 {
     margin-top: 6px;
 }
@@ -621,6 +633,12 @@ input[type=email], input[type=tel], input[type=textarea], button
 {
     font-weight: 700;
     color: var(--black_text_color);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+#message_box::placeholder
+{
 }
 
 /*Contact Style Settings ---                            END*/
