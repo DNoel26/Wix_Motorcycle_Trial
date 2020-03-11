@@ -20,22 +20,26 @@
         <nav id="top_nav">
             <ul>
                 <li class="current_page_active"><a href="index.html">Home</a></li>
-                <li id="header_about_link" class="drop_down_hover"><a href="html/about.html">About</a></li>
+                <li id="header_about_link" >
+                    <div class="drop_down_hover">
+                        <a href="html/about.html">About</a>
+
+                        <!--Bottom nav (hidden until mouse over "About" in top header)-->   
+                        <nav id="bottom_nav">
+                            <ul>
+                                <li class="header_empty_item">blank</li>
+                                <li id="header_contact_link" class="drop_down_content"><a href="html/contact.html">Contact</a></li>
+                                <li class="header_empty_item">blank</li>
+                                <li class="header_empty_item">blank</li>
+                            </ul>        
+                        </nav>
+                    </div>
+                </li>
                 <li><a href="#">Video</a></li>
                 <li><a href="#">Gallery</a></li>
             </ul>             
         </nav>
-
-        <!--Bottom nav (hidden until mouse over "About" in top header)-->     
-        <nav id="bottom_nav">
-            <ul>
-                <li class="header_empty_item">blank</li>
-                <li id="header_contact_link" class="drop_down_content"><a href="html/contact.html">Contact</a></li>
-                <li class="header_empty_item">blank</li>
-                <li class="header_empty_item">blank</li>
-            </ul>        
-        </nav>
-
+        
     </header>
 
     <main id="home_main_div">
