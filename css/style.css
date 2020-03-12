@@ -78,7 +78,7 @@ header > nav > ul > li > a, header > nav > ul > li > div > a
     letter-spacing: 0;
     width: 100%;
     text-align: center;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-out;
     background-color: var(--red_background_color);
 }
@@ -110,18 +110,12 @@ header > nav > ul > li > a, header > nav > ul > li > div > a
     background-color: var(--red_background_color);
 }
 
-.current_page_active a
-{
-    background-color: var(--main_black_background_color);
-    color:var(--red_text_color);
-}
-
 #header_contact_link.current_page_active > a, header > nav > ul > li > a:hover, #header_contact_link > a:hover, header > nav > ul > li > div > a:hover
 {
     background-color: var(--main_black_background_color);
     color:var(--red_text_color);
     transition-property: var(--main_black_background_color), var(--red_text_color);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
 
@@ -132,21 +126,17 @@ header > nav > ul > li > a, header > nav > ul > li > div > a
     width: 100%;
     text-align: center;
     color: inherit;
-    transition-duration: 2s;
+    transition-duration: 1.2s;
     font-size: 1.1rem;
-    position: relative;
-    z-index: -10;
 }
 
 .drop_down_hover:hover #header_contact_link.drop_down_content, .drop_down_hover:hover #header_contact_link.drop_down_content > a
 {
     visibility: visible;
-    z-index: 2;
+    transition-duration: 0.5s;
 }
 
-
-
-.drop_down_hover:hover #header_contact_link.drop_down_content > a, .drop_down_hover:focus #header_contact_link.drop_down_content > a, .drop_down_hover:active #header_contact_link.drop_down_content > a, .drop_down_hover #header_contact_link.drop_down_content > a
+.drop_down_hover:hover #header_contact_link.drop_down_content > a, .drop_down_hover #header_contact_link.drop_down_content > a
 {
     background-color: var(--red_background_color);
     text-decoration: none;
@@ -158,13 +148,25 @@ header > nav > ul > li > a, header > nav > ul > li > div > a
     background-color: var(--main_black_background_color);
     color:var(--red_text_color);
     transition-property: var(--main_black_background_color), var(--red_text_color);
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-out; 
 }
 
 .drop_down_hover:hover #header_contact_link.drop_down_content, .drop_down_hover #header_contact_link.drop_down_content
 {
     margin-top: 8px;
+}
+
+#bottom_nav
+{
+    visibility: hidden;
+}
+
+
+.current_page_active a, #bottom_nav > ul > #header_contact_link.drop_down_content.current_page_active > a
+{
+    background-color: var(--main_black_background_color);
+    color:var(--red_text_color);
 }
 
 /*Header Settings ---                                   END*/
