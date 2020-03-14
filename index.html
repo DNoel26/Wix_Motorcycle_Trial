@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body id="home_body">
 
     <header>
 
@@ -41,6 +41,14 @@
                 <li><a href="#">Gallery</a></li>
             </ul>             
         </nav>
+
+        <!--Hidden mobile hamburger nav
+        <nav>                                   
+            <button class="drop_down_focus">
+                <i class="fas fa-bars">ASDADASDADSA</i>
+                <div class="drop_down_content">TEST</div>
+            </button>
+        </nav>-->
         
     </header>
 
@@ -77,7 +85,8 @@
                     I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
                 </p>
                 <img src="img/home_bottom_div_middle_img.jpg" alt="Side view of middle of motorcycle">
-                <a href="#">Watch Videos</a>
+                <a href="#" class="non_mobile_display_only">Watch Videos</a> <!--Display none in mobile devices-->
+                <a href="#" class="mobile_display_only">Read More</a> <!--Display none in devices larger than mobile-->
             </div>
 
             <div id="home_bottom_div_right">
@@ -88,7 +97,8 @@
                     I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me and you can start adding your own content.
                 </p>
                 <img src="img/home_bottom_div_right_img.jpg" alt ="Side view of rear of motorcyle">
-                <a href="#">Read More</a>
+                <a href="#" class="non_mobile_display_only">Read More</a> <!--Display none in mobile devices-->
+                <a href="#" class="mobile_display_only">Watch Videos</a> <!--Display none in devices larger than mobile-->
             </div>
 
         </div>

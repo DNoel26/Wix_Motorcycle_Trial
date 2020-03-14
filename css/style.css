@@ -1,4 +1,4 @@
-/*General Style Settings ---                            START*/
+/*General Style Settings ---        START*/
 
 /* red color: #b50603
 */
@@ -54,9 +54,14 @@ body
     color: var(--red_text_color);
 }
 
-/*General Style Settings ---                            END*/
+.mobile_display_only
+{
+    display: none;
+}
 
-/*Header Settings ---                                   START*/
+/*General Style Settings ---        END*/
+
+/*Header Settings ---       START*/
 
 header
 {
@@ -176,9 +181,9 @@ header > nav > ul > li > a, header > nav > ul > li > div > a
     color:var(--red_text_color);
 }
 
-/*Header Settings ---                                   END*/
+/*Header Settings ---       END*/
 
-/*Footer Settings ---                                   START*/
+/*Footer Settings ---       START*/
 
 footer
 {
@@ -205,9 +210,9 @@ footer
     margin-left: 290px;
 }
 
-/*Footer Settings ---                                   END*/
+/*Footer Settings ---       END*/
 
-/*Home Style Settings ---                               START*/
+/*Home Style Settings ---       START*/
 
 /*Home Top Div*/
 
@@ -272,7 +277,7 @@ footer
     margin-left: auto;
     margin-right: auto;
     margin-top: -358px;
-    grid-column-gap: 8px;
+    column-gap: 8px;
     padding: 8px;
     background-color: var(--red_background_color);
     z-index: 4;
@@ -350,7 +355,7 @@ footer
     color: var(--main_white_text_color);
     letter-spacing: 0;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     background-color: var(--red_background_color);
@@ -364,17 +369,7 @@ footer
     cursor: pointer;
 }
 
-/*#home_bottom_div_middle
-{
-    
-}
-
-#home_bottom_div_right
-{
-    
-}*/
-
-/*Home Style Settings ---           END --- About Style Settings ---            START*/
+/*Home Style Settings ---       END --- About Style Settings ---        START*/
 
 /*About Top Div*/
 
@@ -473,7 +468,7 @@ footer
     margin: 10px 0 20px 0;
 }
 
-/*About Style Settings ---          END --- Contact Style Settings ---          START*/
+/*About Style Settings ---      END --- Contact Style Settings ---      START*/
 
 /*Contact Top Div*/
 
@@ -523,7 +518,7 @@ footer
     z-index: 3;
     width: 290px;
     max-width: 100%;
-    margin: 200px 0 0 -10px;
+    margin: 199px 0 0 -10px;
 }
 
 /*Contact Middle Div*/
@@ -531,7 +526,7 @@ footer
 #contact_middle_div 
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 250px 230px 230px;
     margin: -403px auto 0 auto;
     z-index: 3;
     width: 980px;
@@ -546,15 +541,15 @@ footer
 
 #contact_middle_div > div > h5
 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     line-height: 2.4rem;
     font-weight: normal;
 }
 
 #contact_middle_div > div > h6
 {
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
     font-weight: normal;
 }
 
@@ -565,12 +560,12 @@ footer
 
 #contact_middle_div_middle
 {
-    margin-left: -74px;
+    margin-left: -68px;
 }
 
 #contact_middle_div_right
 {
-    margin-left: -228px;
+    margin-left: -188px;
 }
 
 /*Contact Bottom Div*/
@@ -580,24 +575,30 @@ footer
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px auto 0 auto;
-    width: 825px;
+    width: 920px;
     max-width: 100%;
     column-gap: 24px;
+}
+
+#contact_bottom_map_div
+{
+    margin: 0 auto;
+    max-width: 100%;
+    column-gap: 10px;
 }
 
 #contact_bottom_map_div > iframe
 {
     width: 405px;
-    max-width: 100%;
     height: 240px;
-    margin-left: -8px;
+    margin-left: 40px;
 }
 
 #contact_bottom_form_div
 {
     width: 433px;
     max-width: 100%;
-
+    margin: 0 auto 0 auto;
 }
 
 input, textarea
@@ -650,8 +651,6 @@ input[type=email]:focus, input[type=email]:active
 
 #contact_submit_button > button
 {
-    display: inline-block;
-    justify-items: right;
     background-color: var(--red_background_color);
     color: var(--main_white_text_color);
     text-decoration: none;
@@ -685,28 +684,839 @@ input[type=email]:focus, input[type=email]:active
     font-size: 0.8rem;
 }
 
-/*Contact Style Settings ---                            END*/
+/*Contact Style Settings ---        END*/
 
 /*-------------------- MEDIA-----QUERIES-----START --------------------*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 { /*Portrait mobile START (max 575.98px)*/
+    
+    /*Portrait Mobile General Style Settings ---        START*/
 
     body
     {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 280px;
-        margin: 0 auto;        
+        grid-template-rows: 3fr;
+        max-width: 340px;
+        margin: 0 auto;
     }
 
+    /*Portrait Mobile General Style Settings ---        END*/
+
+    /*Portrait Mobile Header Settings ---       START*/
+    
+    header
+    {
+        margin: 0 auto;
+    }
+
+    nav > button
+    {
+        cursor: pointer;
+    }
+
+    nav > button:focus
+    {
+        background-color: var(--red_background_color);
+    }
+
+    /*Portrait Mobile Header Settings ---       END*/ 
+
+    /*Portrait Mobile Footer Settings ---       START*/
+
+    footer
+    {
+        max-width: 280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #footer_div_right
+    {
+        display: block;
+        grid-row: 1 / span 1;
+        margin: 0 auto;
+        font-size: 2rem;
+        word-spacing: 20px;
+        padding: 30px 0 15px 0;
+    }
+
+    #footer_div_left
+    {
+        display: block;
+        margin: 0 26px 0 0;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 0.70rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+
+    /*Portrait Mobile Footer Settings ---       END*/
+
+    /*Portrait Mobile Home Style Settings ---       START*/
+
+    #home_top_div
+    {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #home_top_div > h1
+    {
+        max-width: 215px;
+        max-height: 80px;
+        margin: -54px 0 0 0;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 18px 0 0 0x;
+    }
+
+    #home_top_div > img
+    {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #home_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 26px 0 0 -16px;
+    }
+
+    #home_bottom_div 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        row-gap: 10px;
+        max-height: none;
+        max-width: 280px;
+        padding: 0;
+        margin: -60px auto 0 auto;
+        background-color: var(--red_background_color);
+    }
+
+    #home_bottom_div > #home_bottom_div_left, #home_bottom_div > #home_bottom_div_middle, #home_bottom_div > #home_bottom_div_right
+    {
+        margin: 0;
+        padding: 0 10px;
+    }
+   
+    #home_bottom_div > #home_bottom_div_left
+    {
+        padding-top: 10px;
+    }
+
+    #home_bottom_div > #home_bottom_div_right
+    {
+        grid-row: 2 / span 1;
+    }
+
+    #home_bottom_div > #home_bottom_div_middle
+    {
+        padding-bottom: 10px;
+    }
+
+    #home_bottom_div > #home_bottom_div_left > img, #home_bottom_div > #home_bottom_div_middle > img, #home_bottom_div > #home_bottom_div_right > img
+    {
+        max-width: 260px;
+    }
+
+    #home_bottom_div_left > h2, #home_bottom_div_middle > h2, #home_bottom_div_right > h2
+    {
+        font-size: 2.2rem;
+        font-weight: normal;
+        padding-top: 4px;
+        padding-left: 10px;
+    }
+
+    #home_bottom_div_left > p, #home_bottom_div_middle > p, #home_bottom_div_right > p
+    {
+        font-size: 0.81rem;
+        padding: 50px 86px 0 10px;
+        line-height: 1.2rem;
+    }
+
+    #home_bottom_div_middle > p, #home_bottom_div_right > p
+    {
+        padding-right: 20px;
+    }
+
+    #home_bottom_div_left > a, #home_bottom_div_middle > a, #home_bottom_div_right > a
+    {
+        justify-self: center;
+        font-size: 0.88rem;
+        margin: 323px 0 auto 0;
+        padding: 8px 78px;
+    }
+
+    #home_bottom_div_middle > a
+    {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    #home_bottom_div_middle > .mobile_display_only, #home_bottom_div_right > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #home_bottom_div_middle > .non_mobile_display_only, #home_bottom_div_right > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    /*Portrait Mobile Home Style Settings ---       END --- About Style Settings ---        START*/
+
+    #about_top_div
+    {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #about_top_div > h1
+    {
+        max-width: 215px;
+        max-height: 80px;
+        margin: -54px 0 0 0;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 18px 0 0 0x;
+    }
+
+    #about_top_div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #about_top_div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #about_top_div > img
+    {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #about_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 26px 0 0 -16px;
+    }
+
+    #about_bottom_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        max-height: none;
+        max-width: 280px;
+        padding: 0;
+        margin: -64px auto 0 auto;
+    }
+
+    #about_bottom_div > div > div > h2
+    {
+        font-size: 2.3rem;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-weight: normal;
+        max-width: 214px;
+    }
+
+    #about_bottom_div > div > div > h3
+    {
+        font-size: 2rem;
+        letter-spacing: 0;
+        margin-top: -8px;
+        font-weight: normal;
+    }
+
+    #about_bottom_div > div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #about_bottom_div > div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #about_bottom_div > div > img
+    {
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    #about_bottom_div > div > p
+    {
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 1.15rem;
+    }
+
+    #about_bottom_div > div > p:last-child
+    {
+        margin-bottom: 100px;
+    }
+  
+    /*Portrait Mobile About Style Settings ---      END --- Contact Style Settings ---      START*/
+
+    #contact_top_div
+    {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    #contact_top_div > h1
+    {
+        max-width: 210px;
+        max-height: 80px;
+        margin: 18px 0 0 18px;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 12px 0 0 14px;
+    }
+
+    #contact_top_div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #contact_top_div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #contact_top_div > img
+    {
+        width: 320px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    #contact_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 98px 0 0 2px;
+    }
+
+    #contact_middle_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        max-width: 280px;
+    }
+
+    #contact_middle_div_left
+    {
+        margin-top: -350px;
+    }
+
+    #contact_middle_div_left, #contact_middle_div_middle, #contact_middle_div_right
+    {
+        padding: 0;
+        margin-left: 16px;
+    }
+
+    #contact_middle_div > div > h5
+    {
+        font-size: 1.69rem;
+    }
+
+    #contact_middle_div > div > h6
+    {
+        font-size: 1.25rem;
+    }
+
+    #contact_bottom_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        max-width: 280px;
+    }
+
+    #contact_bottom_div > div
+    {
+        display: grid;
+        grid-template-rows: 2fr;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #contact_bottom_map_div
+    {
+        grid-row: 2 / span 1;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #contact_bottom_map_div > iframe
+    {
+        display: block;
+        max-width: 260px;
+        margin: 55px auto 0 auto;
+    }
+
+    #contact_bottom_form_div
+    {
+        grid-row: 1 / span 1;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    input[type=text], input[type=email], input[type=tel] 
+    {
+        display: block;
+        max-width: 260px;
+        margin: 0 auto 8px auto;
+    }
+
+    textarea
+    {
+        display: block;
+        max-width: 260px;
+        height: 129px;
+        padding: 11.25px 10px 3px 24px;
+        margin: 0 auto 0 auto;
+    }
+
+    #contact_submit_button > button
+    {
+        display: block;
+        margin: 8px auto 8px auto;
+        padding: 14px 110px;
+    }
+
+    /*Portrait Mobile Contact Style Settings ---        END*/
 
 } /*Portrait mobile END (max 575.98px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) 
 { /*Landscape mobile START (min 576px, max 767.98px)*/
+
+    /*Landscape Mobile General Style Settings ---        START*/
+
+    body
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    /*Landscape Mobile General Style Settings ---        END*/
+
+    /*Landscape Mobile Header Settings ---       START*/
+    
+    header
+    {
+        margin: 0 auto;
+    }
+
+    nav > button
+    {
+        cursor: pointer;
+    }
+
+    nav > button:focus
+    {
+        background-color: var(--red_background_color);
+    }
+
+    /*Landscape Mobile Header Settings ---       END*/ 
+
+    /*Landscape Mobile Footer Settings ---       START*/
+
+    footer
+    {
+        max-width: 280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #footer_div_right
+    {
+        display: block;
+        grid-row: 1 / span 1;
+        margin: 0 auto;
+        font-size: 2rem;
+        word-spacing: 20px;
+        padding: 30px 0 15px 0;
+    }
+
+    #footer_div_left
+    {
+        display: block;
+        margin: 0 26px 0 0;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 0.70rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+
+    /*Landscape Mobile Footer Settings ---       END*/
+
+    /*Landscape Mobile Home Style Settings ---       START*/
+
+    #home_top_div
+    {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #home_top_div > h1
+    {
+        max-width: 215px;
+        max-height: 80px;
+        margin: -54px 0 0 0;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 18px 0 0 0x;
+    }
+
+    #home_top_div > img
+    {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #home_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 26px 0 0 -16px;
+    }
+
+    #home_bottom_div 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        row-gap: 10px;
+        max-height: none;
+        max-width: 280px;
+        padding: 0;
+        margin: -60px auto 0 auto;
+        background-color: var(--red_background_color);
+    }
+
+    #home_bottom_div > #home_bottom_div_left, #home_bottom_div > #home_bottom_div_middle, #home_bottom_div > #home_bottom_div_right
+    {
+        margin: 0;
+        padding: 0 10px;
+    }
+   
+    #home_bottom_div > #home_bottom_div_left
+    {
+        padding-top: 10px;
+    }
+
+    #home_bottom_div > #home_bottom_div_right
+    {
+        grid-row: 2 / span 1;
+    }
+
+    #home_bottom_div > #home_bottom_div_middle
+    {
+        padding-bottom: 10px;
+    }
+
+    #home_bottom_div > #home_bottom_div_left > img, #home_bottom_div > #home_bottom_div_middle > img, #home_bottom_div > #home_bottom_div_right > img
+    {
+        max-width: 260px;
+    }
+
+    #home_bottom_div_left > h2, #home_bottom_div_middle > h2, #home_bottom_div_right > h2
+    {
+        font-size: 2.2rem;
+        font-weight: normal;
+        padding-top: 4px;
+        padding-left: 10px;
+    }
+
+    #home_bottom_div_left > p, #home_bottom_div_middle > p, #home_bottom_div_right > p
+    {
+        font-size: 0.81rem;
+        padding: 50px 86px 0 10px;
+        line-height: 1.2rem;
+    }
+
+    #home_bottom_div_middle > p, #home_bottom_div_right > p
+    {
+        padding-right: 20px;
+    }
+
+    #home_bottom_div_left > a, #home_bottom_div_middle > a, #home_bottom_div_right > a
+    {
+        justify-self: center;
+        font-size: 0.88rem;
+        margin: 323px 0 auto 0;
+        padding: 8px 78px;
+    }
+
+    #home_bottom_div_middle > a
+    {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    #home_bottom_div_middle > .mobile_display_only, #home_bottom_div_right > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #home_bottom_div_middle > .non_mobile_display_only, #home_bottom_div_right > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    /*Landscape Mobile Home Style Settings ---       END --- About Style Settings ---        START*/
+
+    #about_top_div
+    {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #about_top_div > h1
+    {
+        max-width: 215px;
+        max-height: 80px;
+        margin: -54px 0 0 0;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 18px 0 0 0x;
+    }
+
+    #about_top_div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #about_top_div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #about_top_div > img
+    {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    #about_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 26px 0 0 -16px;
+    }
+
+    #about_bottom_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        max-height: none;
+        max-width: 280px;
+        padding: 0;
+        margin: -64px auto 0 auto;
+    }
+
+    #about_bottom_div > div > div > h2
+    {
+        font-size: 2.3rem;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-weight: normal;
+        max-width: 214px;
+    }
+
+    #about_bottom_div > div > div > h3
+    {
+        font-size: 2rem;
+        letter-spacing: 0;
+        margin-top: -8px;
+        font-weight: normal;
+    }
+
+    #about_bottom_div > div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #about_bottom_div > div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #about_bottom_div > div > img
+    {
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    #about_bottom_div > div > p
+    {
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 1.15rem;
+    }
+
+    #about_bottom_div > div > p:last-child
+    {
+        margin-bottom: 100px;
+    }
+  
+    /*Landscape Mobile About Style Settings ---      END --- Contact Style Settings ---      START*/
+
+    #contact_top_div
+    {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    #contact_top_div > h1
+    {
+        max-width: 210px;
+        max-height: 80px;
+        margin: 18px 0 0 18px;
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 12px 0 0 14px;
+    }
+
+    #contact_top_div > .mobile_display_only
+    {
+        display: inline;
+    }
+
+    #contact_top_div > .non_mobile_display_only
+    {
+        display: none;
+    }
+
+    #contact_top_div > img
+    {
+        width: 320px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    #contact_top_div > #red_box_shadows
+    {
+        z-index: 3;
+        width: 240px;
+        margin: 98px 0 0 2px;
+    }
+
+    #contact_middle_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        max-width: 280px;
+    }
+
+    #contact_middle_div_left
+    {
+        margin-top: -350px;
+    }
+
+    #contact_middle_div_left, #contact_middle_div_middle, #contact_middle_div_right
+    {
+        padding: 0;
+        margin-left: 16px;
+    }
+
+    #contact_middle_div > div > h5
+    {
+        font-size: 1.69rem;
+    }
+
+    #contact_middle_div > div > h6
+    {
+        font-size: 1.25rem;
+    }
+
+    #contact_bottom_div
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        max-width: 280px;
+    }
+
+    #contact_bottom_div > div
+    {
+        display: grid;
+        grid-template-rows: 2fr;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #contact_bottom_map_div
+    {
+        grid-row: 2 / span 1;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    #contact_bottom_map_div > iframe
+    {
+        display: block;
+        max-width: 260px;
+        margin: 55px auto 0 auto;
+    }
+
+    #contact_bottom_form_div
+    {
+        grid-row: 1 / span 1;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    input[type=text], input[type=email], input[type=tel] 
+    {
+        display: block;
+        max-width: 260px;
+        margin: 0 auto 8px auto;
+    }
+
+    textarea
+    {
+        display: block;
+        max-width: 260px;
+        height: 129px;
+        padding: 11.25px 10px 3px 24px;
+        margin: 0 auto 0 auto;
+    }
+
+    #contact_submit_button > button
+    {
+        display: block;
+        margin: 8px auto 8px auto;
+        padding: 14px 110px;
+    }
+
+    /*Landscape Mobile Contact Style Settings ---        END*/
+
+} /*Landscape mobile END (max 767.98px)*/
 
 } /*Landscape mobile END (min 576px, max 767.98px)*/
 
@@ -716,7 +1526,7 @@ input[type=email]:focus, input[type=email]:active
 
     body 
     {
-        max-width: 740px;
+        max-width: 880px;
         margin: 0 auto; 
     }
     
@@ -753,9 +1563,8 @@ input[type=email]:focus, input[type=email]:active
     #about_bottom_div
     {
         margin-top: -168px;
-    }
-    
-
+    }  
+   
 } /*Tablets END (min 768px, max 991.98px)*/
 
 /*Large devices (desktops, 992px and up)*/
