@@ -18,7 +18,7 @@
     <header>
 
         <!--Top nav-->        
-        <nav id="top_nav">
+        <nav id="top_nav" class="non_mobile_display_only">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li id="header_about_link" class="current_page_active">
@@ -40,6 +40,36 @@
                 <li><a href="#">Gallery</a></li>
             </ul>             
         </nav>
+
+        <!--Hidden mobile hamburger nav-->
+        <nav id="mobile_top_nav" class="mobile_display_only">                                   
+            <button class="button_drop_down_focus">
+                <div id="mobile_hamburger_div">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="button_drop_down_content">
+                    <ul>
+                        <li class="current_page_active"><a href="../index.html">Home</a></li>
+                        <li id="header_about_link">
+                            <div class="drop_down_hover">
+                                <a href="about.html">About</a>
+        
+                                <!--Bottom nav (hidden until click or focus on "About" in top mobile header)-->   
+                                <nav id="mobile_bottom_nav">
+                                    <ul>
+                                        <li class="header_empty_item">blank</li>
+                                        <li id="header_contact_link" class="drop_down_content"><a href="contact.html">Contact</a></li>
+                                        <li class="header_empty_item">blank</li>
+                                        <li class="header_empty_item">blank</li>
+                                    </ul>        
+                                </nav>
+                            </div>
+                        </li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>             
+                </div>
+            </button> 
 
     </header>
 
