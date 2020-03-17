@@ -23,7 +23,10 @@
                 <li><a href="../index.html">Home</a></li>
                 <li id="header_about_link">
                     <div class="drop_down_hover">
-                        <a href="about.html">About</a>
+                        <div>
+                            <a href="about.html">About</a>   
+                        </div>
+                        
                         
                         <!--Bottom nav (hidden until mouse over "About" in top header)-->   
                         <nav id="bottom_nav">
@@ -49,24 +52,26 @@
                 </div>
                 <div class="button_drop_down_content">
                     <ul>
-                        <li class="current_page_active"><a href="../index.html">Home</a></li>
+                        <li class="mobile_list_links"><a href="../index.html">Home</a></li>
                         <li id="header_about_link">
                             <div class="drop_down_hover">
-                                <a href="about.html">About</a>
-        
+                                <div id="mobile_about_link_div">
+                                    <a href="about.html">About</a>
+                                </div>
+                                        
                                 <!--Bottom nav (hidden until click or focus on "About" in top mobile header)-->   
                                 <nav id="mobile_bottom_nav">
                                     <ul>
                                         <li class="header_empty_item">blank</li>
-                                        <li id="header_contact_link" class="drop_down_content"><a href="contact.html">Contact</a></li>
+                                        <li id="header_contact_link" class="drop_down_content current_page_active"><a href="contact.html">Contact</a></li>
                                         <li class="header_empty_item">blank</li>
                                         <li class="header_empty_item">blank</li>
                                     </ul>        
                                 </nav>
                             </div>
                         </li>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li class="mobile_list_links"><a href="#">Video</a></li>
+                        <li class="mobile_list_links"><a href="#">Gallery</a></li>
                     </ul>             
                 </div>
             </button> 
