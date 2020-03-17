@@ -919,8 +919,8 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -54px 0 0 0;
-        font-size: 1.45rem;
-        line-height: 1.4rem;
+        font-size: 1.35rem;
+        line-height: 1.2rem;
         padding: 18px 0 0 16px;
     }
 
@@ -1033,8 +1033,8 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -54px 0 0 0;
-        font-size: 1.45rem;
-        line-height: 1.4rem;
+        font-size: 1.35rem;
+        line-height: 1.2rem;
         padding: 18px 0 0 16px;
     }
 
@@ -1074,7 +1074,7 @@ input[type=email]:focus, input[type=email]:active
 
     #about_bottom_div > div > div > h2
     {
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         letter-spacing: 0;
         word-spacing: 0;
         font-weight: normal;
@@ -1083,7 +1083,7 @@ input[type=email]:focus, input[type=email]:active
 
     #about_bottom_div > div > div > h3
     {
-        font-size: 2rem;
+        font-size: 1.3rem;
         letter-spacing: 0;
         margin-top: -8px;
         font-weight: normal;
@@ -1130,8 +1130,8 @@ input[type=email]:focus, input[type=email]:active
         max-width: 210px;
         max-height: 80px;
         margin: -54px 0 0 18px;
-        font-size: 1.45rem;
-        line-height: 1.4rem;
+        font-size: 1.35rem;
+        line-height: 1.2rem;
         padding: 16px 0 0 14px;
     }
 
