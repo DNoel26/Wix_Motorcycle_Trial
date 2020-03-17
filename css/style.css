@@ -919,7 +919,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -54px 0 0 0;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 18px 0 0 16px;
     }
@@ -1033,7 +1033,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -54px 0 0 0;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 18px 0 0 16px;
     }
@@ -1130,7 +1130,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 210px;
         max-height: 80px;
         margin: -54px 0 0 18px;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 16px 0 0 14px;
     }
@@ -1491,7 +1491,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -68px 0 0 86.3px;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 16px 0 0 16px;
         transform: scale(1.8);
@@ -1607,7 +1607,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 215px;
         max-height: 80px;
         margin: -68px 0 0 86.3px;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 16px 0 0 16px;
         transform: scale(1.8);
@@ -1712,7 +1712,7 @@ input[type=email]:focus, input[type=email]:active
         max-width: 210px;
         max-height: 80px;
         margin: -70px 0 0 144.3px;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         line-height: 1.4rem;
         padding: 12px 0 0 14px;
         transform: scale(1.8);
