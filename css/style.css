@@ -367,6 +367,11 @@ footer
     cursor: pointer;
 }
 
+#home_bottom_div_middle .mobile_display_only, #home_bottom_div_right .mobile_display_only
+{
+    display: none;
+} 
+
 /*Home Style Settings ---       END --- About Style Settings ---        START*/
 
 /*About Top Div*/
